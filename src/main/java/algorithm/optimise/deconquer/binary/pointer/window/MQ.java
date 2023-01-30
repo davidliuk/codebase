@@ -1,7 +1,6 @@
-package algorithm.optimise.deconquer.tp.window;
+package algorithm.optimise.deconquer.binary.pointer.window;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -34,10 +33,6 @@ public class MQ {
     int[] maxSlidingWindow(int[] nums, int k) {
         MonotonicQueue window = new MonotonicQueue();
         List<Integer> res = new ArrayList<>();
-
-        Comparator<Integer> comparator = (a, b) -> {
-            return a - b;
-        };
 
         for (int i = 0; i < nums.length; i++) {
             if (i < k - 1) {

@@ -1,6 +1,6 @@
 package algorithm.tp.bs;
 
-import algorithm.optimise.deconquer.bs.BinarySearch;
+import algorithm.optimise.deconquer.binary.search.BinarySearch;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;

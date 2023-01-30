@@ -1,6 +1,6 @@
 package algorithm.tp.window;
 
-import algorithm.optimise.deconquer.tp.window.MQ;
+import algorithm.optimise.deconquer.binary.pointer.window.MQ;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

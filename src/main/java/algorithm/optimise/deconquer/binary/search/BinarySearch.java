@@ -1,4 +1,4 @@
-package algorithm.optimise.deconquer.bs;
+package algorithm.optimise.deconquer.binary.search;
 
 import java.util.function.DoublePredicate;
 import java.util.function.IntPredicate;
@@ -67,7 +67,6 @@ public class BinarySearch {
         return -1;
     }
 
-    // 这样没事
     int searchFirst2(int[] nums, int target) {
         int start = 0, end = nums.length - 1;
         while (start < end) {

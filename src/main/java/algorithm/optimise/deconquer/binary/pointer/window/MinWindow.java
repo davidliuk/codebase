@@ -1,4 +1,4 @@
-package algorithm.optimise.deconquer.tp.window;
+package algorithm.optimise.deconquer.binary.pointer.window;
 
 import java.util.*;
 
