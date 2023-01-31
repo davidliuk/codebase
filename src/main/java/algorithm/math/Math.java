@@ -1,24 +1,21 @@
 package algorithm.math;
 
 public class Math {
-    public double myPow(double x, int n) {
-        // 0的任何次幂均为0
-        if (x == 0.0f) {
+
+    double myPow(double a, int n) {
+        if (a == 0.0f) {
             return 0.0d;
         }
         if (n < 0) {
-            // x = 1 / x;
-            // n = -n;
-            // 推荐递归写法
-            return myPow(1 / x, -n);
+            // 防止n是min_value，会溢出
+            return (1 / a) * myPow(1 / a, -(n + 1));
         }
-
-        double ans = 1.0, base = x;
-        while (n > 0) {
-            if ((n & 1) == 1) {
-                ans *= base;
+        double ans = 1, base = a;
+        while (n != 0) {
+            if (n % 2 == 1) {
+                ans = (ans * base);
             }
-            base *= base;
+            base = (base * base);
             n >>= 1;
         }
 

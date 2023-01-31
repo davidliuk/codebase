@@ -5,6 +5,7 @@ import algorithm.structure.model.ListNode;
 import java.util.HashMap;
 
 public class QuickSort {
+
     public ListNode sortList(ListNode head) {
         if (head == null) {
             return null;
@@ -30,7 +31,6 @@ public class QuickSort {
         ListNode p = partition(prev, tail, prev.next.val);
         quickSort(prev, p);
         quickSort(p, tail);
-        new HashMap<>();
     }
 
     public ListNode findMiddle(ListNode head, ListNode tail) {

@@ -88,7 +88,7 @@ public class Ladders {
         int size = queue.size();
         for (int i = 0; i < size; i++) {
             String node = queue.poll();
-            for (String neighbor : graph.getOrDefault(node, new HashSet<String>())) {
+            for (String neighbor : graph.getOrDefault(node, new HashSet<>())) {
                 if (set.contains(neighbor)) {
                     continue;
                 }
